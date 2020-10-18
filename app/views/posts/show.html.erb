@@ -7,8 +7,13 @@
      data: {confirm: 'Are you sure?'},
      :class => 'btn btn-danger' %>
 
- <hr>
+<hr>
 
- <h3>Add a Comment</h3>
+<h3>Add a Comment</h3>
+
+<%= form_for([@post, @post.comments.build]) do |f| %> 
+
+
+
 
 
