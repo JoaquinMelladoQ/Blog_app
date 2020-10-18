@@ -4,8 +4,9 @@ class CommentsController < ApplicationController
         @comment = @post.comments.create(comment_params)
         redirect_to post_path(@post)
     end
+    
+    private comment_params
+        params.require(:comment).permit(:usernamenn, :body)
+    end
 end
 
-private comment_params
-    params.require(:comment).permit(:usernamenn, :body)
-end
