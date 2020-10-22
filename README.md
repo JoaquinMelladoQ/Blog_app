@@ -6,3 +6,5 @@ With this little app you can Create, Read, Upload and Delete posts
 
 + CRUD application
 
++ Basic auth
+
